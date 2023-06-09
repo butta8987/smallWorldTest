@@ -1,0 +1,40 @@
+<div class="p-2">
+    <mat-card class="example-card">
+        <mat-card-content>
+            <h1 class="mb-8">Phase results</h1>
+            <div class="flex justify-between mx-4 mb-3" *ngFor="let item of cardlist">
+                  <p>
+                    {{item.title}}:
+                  </p>
+                  <span class="text-gray-500 text-sm">{{item.value}}</span>
+            </div>
+
+        </mat-card-content>
+      </mat-card>
+
+      <form class="mt-2">
+        <mat-form-field class="w-full">
+          <mat-label>Search</mat-label>
+          <input type="text" matInput placeholder="Search">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </form>
+
+      <div class="gradient-box p-4">
+        <mat-progress-spinner
+        class="example-margin mx-auto "
+        color="primary"
+        mode="determinate"
+        value="60">
+    </mat-progress-spinner>
+        <label class="block text-center font-bold text-xl my-2">Current progress</label>
+        <small class="block text-center mb-4 text-gray-700">Lorem ipsum dolor sit amet consectetur</small>
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</p>
+        <div class="flex justify-end">
+            <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>fingerprint</mat-icon>
+              </button>
+        </div>
+
+      </div>
+</div>

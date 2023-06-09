@@ -1,0 +1,12 @@
+.sidebar{
+    display: block;
+    width: 150px;
+}
+:host ::ng-deep{
+    mat-icon{
+        font-size: 20px;
+    }
+    .active_Menu{
+        color: purple;
+    }
+}

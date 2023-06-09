@@ -1,0 +1,13 @@
+
+table {
+    width: 100%;
+  }
+
+:host ::ng-deep{
+    .mat-elevation-z8{
+        box-shadow: none;
+    }
+    // .mat-mdc-paginator{
+    //     margin-left: 10rem;
+    // }
+}

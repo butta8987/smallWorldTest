@@ -1,0 +1,19 @@
+<div class="flex justify-end px-2 py-2 bg-white">
+    <mat-form-field class="mr-2">
+        <mat-label>Agent name</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let agent of Agents" [value]="agent.value">
+            {{agent.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Country</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let country of Countries" [value]="country.value">
+            {{country.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+</div>

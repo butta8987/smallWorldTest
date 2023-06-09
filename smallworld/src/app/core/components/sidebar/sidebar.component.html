@@ -1,0 +1,9 @@
+<nav class="sidebar ml-2">
+<ng-container *ngFor="let item of menuItems">
+  <div class="flex gap-2 mb-3 text-sm cursor-pointer" [ngClass]="{'active_Menu' : item.active}">
+   <mat-icon [fontIcon]="item.icon"></mat-icon>
+   <span>{{item.label}}</span>
+  </div>
+</ng-container>
+</nav>
+  
